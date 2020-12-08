@@ -1,0 +1,75 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CustomEditTextStyle">
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="android:importantForAutofill" tools:targetApi="o">no</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="CustomButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/margin_large</item>
+        <item name="android:background">@drawable/border_round</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/text_size_semi_large</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/nunito</item>
+    </style>
+
+    <style name="OnboardingNoteStyle">
+        <item name="android:layout_marginStart">@dimen/margin_medium</item>
+        <item name="android:layout_marginTop">@dimen/margin_large</item>
+        <item name="android:layout_marginEnd">@dimen/margin_medium</item>
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="android:justificationMode" tools:ignore="NewApi">inter_word</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/text_size_extra_large</item>
+    </style>
+
+    <style name="OnboardingTitleStyle">
+        <item name="android:layout_marginTop">@dimen/margin_medium</item>
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/text_size_extra_large</item>
+    </style>
+
+    <style name="LabelTextStyle">
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/text_size_semi_large</item>
+    </style>
+
+    <style name="InputEditTextStyle">
+        <item name="android:layout_marginStart">@dimen/margin_small</item>
+        <item name="android:importantForAutofill" tools:targetApi="o">no</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:fontFamily">@font/nunito</item>
+    </style>
+
+    <style name="DrawTextStyle">
+        <item name="android:layout_marginStart">@dimen/margin_large</item>
+        <item name="android:layout_marginTop">@dimen/margin_large</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="BottomSheetTextStyle">
+        <item name="android:layout_margin">@dimen/margin_medium</item>
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+    </style>
+
+</resources>

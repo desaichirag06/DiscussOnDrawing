@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "29474489264",
+    "project_id": "discussdrawingapp",
+    "storage_bucket": "discussdrawingapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29474489264:android:84180d31463df34dd68c75",
+        "android_client_info": {
+          "package_name": "com.chirag.discussondrawing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29474489264-o1s2a2js4mm3ouo023da9gfh48d6ihad.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJwQwmLa5uzGD9yKZhrWrpnbUeNWZjOOU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "29474489264-o1s2a2js4mm3ouo023da9gfh48d6ihad.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

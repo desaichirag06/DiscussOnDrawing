@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_screens"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.chirag.discussondrawing.screens.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_addDrawingFragment"
+            app:destination="@id/addDrawingFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_homeFragment_to_drawingDetailsFragment"
+            app:destination="@id/drawingDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addDrawingFragment"
+        android:name="com.chirag.discussondrawing.screens.addDrawing.AddDrawingFragment"
+        android:label="Add Drawing"
+        tools:layout="@layout/fragment_add_drawing">
+        <action
+            android:id="@+id/action_addDrawingFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drawingDetailsFragment"
+        android:name="com.chirag.discussondrawing.screens.home.DrawingDetailsFragment"
+        android:label="Details"
+        tools:layout="@layout/fragment_drawing_details">
+        <argument
+            android:name="drawingDetails"
+            app:argType="com.chirag.discussondrawing.models.DrawingListModel" />
+    </fragment>
+</navigation>

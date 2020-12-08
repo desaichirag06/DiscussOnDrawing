@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="drawingDetails"
+            type="com.chirag.discussondrawing.models.DrawingListModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screens.home.DrawingDetailsFragment">
+
+        <com.chirag.discussondrawing.common.PinView
+            android:id="@+id/ivDrawImage"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDrawingName"
+            style="@style/OnboardingNoteStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{drawingDetails.name}"
+            app:layout_constraintEnd_toEndOf="@+id/ivDrawImage"
+            app:layout_constraintStart_toStartOf="@+id/ivDrawImage"
+            app:layout_constraintTop_toBottomOf="@+id/ivDrawImage"
+            tools:text="Drawing Name" />
+
+        <TextView
+            android:id="@+id/tvMarkersTitleStatic"
+            style="@style/DrawTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/marker"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDrawingName" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMarkerList"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margin_large"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tvDrawingName"
+            app:layout_constraintStart_toStartOf="@+id/tvDrawingName"
+            app:layout_constraintTop_toBottomOf="@+id/tvMarkersTitleStatic"
+            app:layout_constraintVertical_bias="0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
